@@ -12,7 +12,8 @@
     "build:tor": "bash scripts/build-tor.sh",
     "start": "node bin/agentor.js daemon",
     "test": "node --experimental-strip-types --test test/*.test.js",
-    "typecheck": "tsc --noEmit -p tsconfig.json"
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "deps": "bash scripts/install-builtin-deps.sh"
   },
   "keywords": [
     "pi-package",
@@ -67,6 +68,16 @@
     ],
     "prompts": [
       "./prompts/*.md"
+    ]
+  },
+  "agentor": {
+    "builtinDeps": [
+      "autoconf",
+      "automake",
+      "libtool",
+      "pkgconf",
+      "libevent",
+      "openssl@3"
     ]
   }
 }

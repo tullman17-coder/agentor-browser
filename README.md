@@ -23,8 +23,10 @@ Tor Browser itself is a patched Firefox application. This project is the agent e
 
 ## Build
 
+`autoconf`, `automake`, `libtool`, `pkgconf`, `libevent`, and `openssl@3` are built-in deps, not optional extras. `npm run deps` installs that set. `Brewfile` is the same list.
+
 ```bash
-brew install autoconf automake libtool pkgconf libevent openssl@3
+npm run deps
 npm install
 npm run build:tor
 ```
