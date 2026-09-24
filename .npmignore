@@ -1,0 +1,14 @@
+runtime/
+dist/
+*.log
+.DS_Store
+
+third_party/tor-install/
+third_party/tor-0.4.9.13/.git/
+third_party/tor-0.4.9.13/autom4te.cache/
+third_party/tor-0.4.9.13/src/**/*.o
+third_party/tor-0.4.9.13/**/*.a
+third_party/tor-0.4.9.13/src/app/tor
+third_party/tor-0.4.9.13/src/tools/tor-*
+third_party/tor-0.4.9.13/src/test/bench
+third_party/tor-0.4.9.13/src/test/test-*
